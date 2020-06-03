@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  color: #ccc;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar a {
+  color: #ccc;
+  padding: 10px 20px;
+  margin: 0 5px;
+  transition: border 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  border-bottom: #eece1a 2px solid;
+  color: #eece1a;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+.content .avocat-branding {
+  color: #eece1a;
+}
+
+/* Header */
+
+.hero {
+  background: url(../img/home/header.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #ccc;
+}
+
+.hero.daunemorale {
+  background: url(../img/home/hunters-race-MYbhN8KaaEc-unsplash.jpg) no-repeat
+    center center/cover;
+  height: 30vh;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 60px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+  font-style: italic;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+/* Icons */
+
+.icons {
+  padding: 30px;
+}
+
+.icons h2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(75, 73, 73);
+}
+
+.icons p {
+  color: rgb(75, 73, 73);
+  padding-top: 15px;
+}
+
+.icons i {
+  background-color: #eece1a;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+div.parallax {
+  height: 60vh;
+  background-image: url('../img/home/melinda-gimpel-xcVW_sFp4jQ-unsplash.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.second {
+  height: 60vh;
+  background-image: url('../img/home/para-second.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information-daune-materiale {
+  max-width: 55%;
+}
+
+.information-daune-materiale h3 {
+  text-align: center;
+  color: #eece1a;
+  font-size: 1.5rem;
+  padding-bottom: 25px;
+}
+
+.information-daune-materiale h4 {
+  font-size: 1.2rem;
+  color: rgb(75, 73, 73);
+  font-style: italic;
+  text-align: center;
+}
+
+div.information {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+}
+
+div.information h2,
+div.information p {
+  color: rgb(75, 73, 73);
+}
+
+div.information-extra {
+  width: 60%;
+}
+
+div.information-extra h2,
+div.information-extra p {
+  color: rgb(75, 73, 73);
+}
+
+#services .column-1 {
+  background: url('../img/home/hunters-race-MYbhN8KaaEc-unsplash.jpg') no-repeat;
+  background-size: cover;
+}
+
+#contact .column-1 {
+  background: url('../img/home/austin-distel-Imc-IoZDMXc-unsplash.jpg')
+    no-repeat;
+  background-size: cover;
+}
+
+/* Callback form */
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #eece1a;
+}
+
+.callback-form input:focus {
+  outline: none;
+}
+
+.callback-form .btn {
+  padding: 12px;
+  margin-top: 20px;
+  background: #eece1a;
+  text-transform: uppercase;
+}
+
+.contact-form h2 {
+  margin: 10px 0;
+  padding: 0;
+  color: #eece1a;
+}
+
+.contact-form p {
+  color: rgb(153, 151, 151);
+  border: none;
+  text-align: justify;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+/* Footer  */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+  color: #fff;
+  background-color: #eece1a;
+}
+
+.footer p {
+  font-size: 1.2rem;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .navbar h1 {
+    display: none;
+  }
+
+  .navbar li a {
+    font-size: 1.4rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  div.information {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .parallax {
+    display: none;
+  }
+
+  .flex-items > div {
+    max-width: 100%;
+  }
+}
